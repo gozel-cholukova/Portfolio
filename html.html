@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+
+      <div class="header__inner"> 
+        <div class="user">
+          <div class="user__ava">
+            <img src="https://placehold.it/57/333" alt="">
+          </div>
+          <div class="user__content">
+            <div class="user__name">Gozel Cholukova</div>
+            <div class="user_prof">Front End Web Developer</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a class="nav__link" href="#">WORK</a>
+          <a class="nav__link" href="#">ABOUT ME</a>
+          <a class="nav__link" href="#">BLOG</a>
+          <a class="nav__link" href="#">contact</a>
+          <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hireme">HIRE ME</a>
+        </nav>
+
+        <!-- <nav>   MORE OPTION MENU
+          <ul>
+            <li>
+              <a href=""></a>
+            </li>
+          </ul>
+        </nav> --> 
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="intro ">
+    <div class="container">
+
+      <div class="intro__inner">
+        <div class="intro__content">
+          <h2 class="intro__subtit">Hello I'm</h2>
+          <h1 class="intro__tit">Gozel Cholukova</h1>
+          <div class="intro__text">Front End Web Developer</div>
+
+          <div class="social">
+            <a class="social__link" href="#">
+              <i class="fab fa-facebook-square"></i> 
+            </a>
+
+            <a class="social__link" href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a class="social__link" href="#">
+              <i class="fab fa-github-square"></i>
+            </a> 
+
+            <a class="social__link" href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+
+            <a class="social__link" href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>          
+          </div>
+
+          <a class="btn" href="#" data-modal="#modal_hireme">HIRE ME</a>
+          <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+          
+        </div>
+        <img class="intro__photo" src="images/maxwell-nelson-O6-MP6PVI5k-unsplash.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <div class="works">
+    <div class="container">
+
+      <div class="works__nav">
+        <a class="works__nav-link" href="#" data-filter="all">All</a>
+        <a class="works__nav-link" href="#" data-filter="app">App</a>
+        <a class="works__nav-link" href="#" data-filter="website">Websites</a>
+        <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
+      </div>
+
+      <div class="portfolio">
+
+        <div class="portfolio__col" data-cat="app">           
+          <div class="work" data-modal="#modal_project1">
+            <img class="work__image" src="images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="">
+            <div class="work__content">
+              <div class="work__categ">Category: app</div>
+              <div class="work__title">
+                Project Title 
+                <time class="work__date"datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div class="portfolio__col" data-cat="website">           
+          <div class="work">
+            <img class="work__image" src="images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="">
+            <div class="work__content">
+              <div class="work__categ">Category: website</div>
+              <div class="work__title">
+                Project Title 
+                <time class="work__date"datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div class="portfolio__col" data-cat="interaction">           
+          <div class="work">
+            <img class="work__image" src="images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="">
+            <div class="work__content">
+              <div class="work__categ">Category: interaction</div>
+              <div class="work__title">
+                Project Title 
+                <time class="work__date"datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div class="portfolio__col" data-cat="app">           
+          <div class="work">
+            <img class="work__image" src="images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="">
+            <div class="work__content">
+              <div class="work__categ">Category: app</div>
+              <div class="work__title">
+                Project Title 
+                <time class="work__date"datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div class="portfolio__col" data-cat="website">           
+          <div class="work">
+            <img class="work__image" src="images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="">
+            <div class="work__content">
+              <div class="work__categ">Category: website</div>
+              <div class="work__title">
+                Project Title 
+                <time class="work__date"datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div class="portfolio__col" data-cat="interaction">           
+          <div class="work">
+            <img class="work__image" src="images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="">
+            <div class="work__content">
+              <div class="work__categ">Category: interaction</div>
+              <div class="work__title">
+                Project Title 
+                <time class="work__date"datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>      
+        </div>
+        
+        
+      </div>
+      <div class="text-center">
+        <a class="btn btn--sm" href="#">LOAD MORE WORK</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT ME -->
+  <section class="about">
+    <div class="container">
+
+      <div class="about__inner">
+        <div class="about_photo">
+          <img src="images/0109.png" alt="">
+        </div>
+
+        <div class="about__content">
+          <h3 class="about__title">ABOUT ME</h3>
+          <h2 class="about__bigtitle">WHO AM I</h2>
+
+          <div class="about__text">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos optio saepe, magni quibusdam est doloremque consectetur quaerat dolor obcaecati velit minus, tenetur tempore labore possimus consequatur eum perspiciatis iure dolores?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aliquid voluptatem quo placeat, sapiente corrupti unde eum. Dignissimos facilis sapiente dolorum animi? Praesentium minus expedita optio? Beatae voluptatibus sed aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum deserunt quibusdam ipsam facilis, perspiciatis doloribus reprehenderit eius tempore repellendus deleniti unde aliquam quaerat illo corrupti nihil temporibus quod consequatur incidunt.</p>
+          </div>
+
+          <a class="btn" href="#" data-modal="#modal_hireme">HIRE ME</a>
+          <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <div class="reviews">
+    <div class="container">
+
+      <div class="reviews__item">
+        <div class="reviews__text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis commodi neque quos beatae at dolorem maiores deleniti, vel optio odit consequatur fugiat ad pariatur consectetur quo possimus suscipit quaerat.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias neque odit dolores consectetur iste quisquam, unde, excepturi sequi sit deserunt ipsa recusandae tempore vitae commodi eos cumque qui. Fuga, eligendi.</p>
+        </div>
+
+        <div class="reviews__author">
+          <img class="reviews__photo" src="images/photo.png" alt="">
+          <div class="reviews__name">Murad CH.</div>
+          <div class="reviews__company">W.E.Lyons</div>
+          <div class="reviews__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- NEWS -->
+  <section class="news">
+    <div class="container">
+
+      <div class="news__header">
+        <h3 class="news__title">read me</h3>
+        <div class="news__text">Sometimes I write something smart</div>
+      </div>
+
+      <div class="articles">
+        <div class="articles__col">             
+          <div class="articles__item">
+            <div class="articles__header">
+              <time class="articles__date">01<br>August</time>
+              <a href="#"><img class="articles__image" src="images/kevin-ku-aiyBwbrWWlo-unsplash.jpg" alt="">
+              </a>                
+            </div>
+              
+            <div class="articles__content">
+              <h4 class="articles__title">
+                <a href="#">TEN THE BEST APP IN 2019</a>
+              </h4>
+              <div class="articles__categ">Category</div>
+              <div class="articles__text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et voluptatem similique ut placeat illum, voluptas soluta iste voluptate vitae dignissimos reiciendis expedita itaque perspiciatis repellendus, sunt ea omnis doloribus repudiandae!</p>
+              </div>                
+            </div>
+            <a class="btn btn--sm" href="#">READ MORE</a>
+          </div>    
+        </div>
+      
+        <div class="articles__col">             
+          <div class="articles__item">
+            <div class="articles__header">
+              <time class="articles__date">10<br>April</time>
+              <a href="#"><img class="articles__image" src="images/kevin-ku-aiyBwbrWWlo-unsplash.jpg" alt="">
+              </a>                
+            </div>
+              
+            <div class="articles__content">
+              <h4 class="articles__title">
+                <a href="#">website inspiration</a>
+              </h4>
+              <div class="articles__categ">Category</div>
+              <div class="articles__text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et voluptatem similique ut placeat illum, voluptas soluta iste voluptate vitae dignissimos reiciendis expedita itaque perspiciatis repellendus, sunt ea omnis doloribus repudiandae!</p>
+              </div>                
+            </div>
+            <a class="btn btn--sm" href="#">READ MORE</a>
+          </div>    
+        </div>
+    
+        <div class="articles__col">             
+          <div class="articles__item">
+            <div class="articles__header">
+              <time class="articles__date">27<br>January</time>
+              <a href="#"><img class="articles__image" src="images/kevin-ku-aiyBwbrWWlo-unsplash.jpg" alt="">
+              </a>                
+            </div>
+              
+            <div class="articles__content">
+              <h4 class="articles__title">
+                <a href="#">changes in social media</a>
+              </h4>
+              <div class="articles__categ">Category</div>
+              <div class="articles__text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et voluptatem similique ut placeat illum, voluptas soluta iste voluptate vitae dignissimos reiciendis expedita itaque perspiciatis repellendus, sunt ea omnis doloribus repudiandae!</p>
+              </div>                
+            </div>
+            <a class="btn btn--sm" href="#">READ MORE</a>
+          </div>    
+        </div>
+      </div>
+
+      <div class="news__footer">
+        <a class="news__link" href="#">see more posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+
+      <div class="footer__inner">
+        <div class="footer__credits">
+          <div class="footer__copyright">
+            &copy; 2020 UI43 Prac. by Kuzmich.
+          </div> 
+
+          <div class="footer__link">
+            <a href="#" target="_blank">
+              <i class="fab fa-facebook-f"></i> 
+            </a>
+
+            <a href="#" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" target="_blank">
+              <i class="fab fa-github"></i>
+            </a> 
+
+            <a href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a> 
+          </div>        
+        </div>
+
+        <nav class="footer__nav">
+          <a class="footer__nav-link" href="#">Work</a>
+          <a class="footer__nav-link" href="#">About Me</a>
+          <a class="footer__nav-link" href="#">Blog</a>
+          <a class="footer__nav-link" href="#">Contact</a>
+          <a class="footer__link footer__link--btn" href="#">HIRE ME</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODALS -->
+  <div class="modal" id="modal_project1">
+    <div class="modal__dialog">
+
+      <button class="modal__close" type="button" data-close><i class="fas fa-times-circle" alt="close"></i></button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <img src="images/georgie-cobbs-muOHbrFGEQY-unsplash.jpg" alt="">
+        </div>
+
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">Project Title</h3>
+            <div class="modal-work__info">category <span class="divider">|</span> 2019</div>
+          </div>
+
+          <div class="modal-work__client">
+            <div class="client-title">Client:</div>
+            <div class="client-company"> W.E.Lyons</div>
+          </div>
+
+          <div class="modal-work__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus voluptatem ut eaque! Iste eos eius voluptatem animi quae quam non temporibus suscipit, beatae doloremque laudantium iure enim veritatis a.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laborum libero dolor blanditiis laboriosam temporibus. Harum esse autem culpa rerum? Quia alias quisquam doloribus sed quod error necessitatibus incidunt fugiat.</p>
+          </div>
+
+          <div class="modal-work__footer">
+            <button class="m-w__btn m-w__btn--prev" type="button"><i class="fas fa-angle-left"></i>      Previous</button>
+            <button class="m-w__btn m-w__btn--next" type="button">Next      <i class="fas fa-angle-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALS 2 -->
+  <div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+
+      <button class="modal__close" type="button" data-close><i class="fas fa-times-circle" alt="close"></i></button>
+      <div class="modal__content">
+        <h3 class="modal__title  text-center>">resume</h3>
+
+        <div class="text-center">
+          <a class="btn btn--thin" href="#">download pdf</a>
+          <a class="btn btn--thin" href="#">print</a>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__col timeline__col--left">
+            <h4 class="timeline__title">experience</h4>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="11-25-2013">2013 - <b>Present</b></time>
+              <h5 class="timeline__subtitle">Specialist of Marketing Department</h5>
+              <div class="timeline__position">CNPC CCDC Turkmenistan Branch</div>
+              <div class="timeline__text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa doloribus deserunt eligendi officia.</p>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="11-25-2013">2013 - <b>Present</b></time>
+              <h5 class="timeline__subtitle">Specialist of Marketing Department</h5>
+              <div class="timeline__position">CNPC CCDCT</div>
+              <div class="timeline__text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa doloribus deserunt eligendi officia.</p>
+              </div>
+            </div>
+
+            <h4 class="timeline__title">awards</i></h4>
+            <div class="timeline__item">
+              <time class="timeline__date" datetime="11-25-2013">2017</time>
+              <h5 class="timeline__subtitle">The Best Employee of Marketing Department - 2016</h5>
+              <div class="timeline__position">CNPC CCDCT</div>
+              <div class="timeline__text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia debitis?</p>
+              </div>
+            </div>   
+          </div>
+
+          <div class="timeline__col timeline__col--right">
+            <h4 class="timeline__title">education</h4>
+
+            <div class="timeline__item">
+              <time class="timeline__date">2019 - <b>Present</b></time>
+              <h5 class="timeline__subtitle">Front End Web Development(online content)</h5>
+              <div class="timeline__position">Traversy Media, freeCodeCamp.org and etc.</div>
+            </div>
+
+            <div class="timeline__item">
+              <time class="timeline__date">2009 - 2013</time>
+              <h5 class="timeline__subtitle">Business Administration</h5>
+              <div class="timeline__position">Savitribai Phule Pune University, India</div>
+            </div>
+
+            <h4 class="timeline__title">skills</h4>
+            <div class="progress-bar">
+              <div class="progress-bar__item">
+
+                <!-- <div class="progress-bar__left">
+                  <div class="progress-bar__title">HTML</div>
+                </div>
+
+                <div class="progress-bar__right">
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-bar__item">
+
+                <div class="progress-bar__left">
+                  <div class="progress-bar__title">CSS</div>
+                </div> -->
+
+                <!-- <div class="progress-bar__right">
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress-bar__item">
+
+                <div class="progress-bar__left">
+                  <div class="progress-bar__title">JS</div>
+                </div>
+
+                <div class="progress-bar__right">
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                  </div>
+                </div> -->
+
+                <div class="tarap-col">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">HTML</div>
+                  </div>
+
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div class="progress-bar__progress" style="width: 80%;"></div>
+                    </div>
+                  </div> 
+
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">CSS</div>
+                  </div>
+
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div class="progress-bar__progress" style="width: 80%;"></div>
+                    </div>
+                  </div> 
+
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">JS</div>
+                  </div>
+
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div class="progress-bar__progress" style="width: 80%;"></div>
+                    </div>
+                  </div> 
+                  
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">React</div>
+                  </div>
+
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div class="progress-bar__progress" style="width: 80%;"></div>
+                    </div>
+                  </div> 
+
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">Redux</div>
+                  </div>
+
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div class="progress-bar__progress" style="width: 80%;"></div>
+                    </div>
+                  </div> 
+
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">Design</div>
+                  </div>
+
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div class="progress-bar__progress" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>        
+          </div>   
+        </div>
+
+        <div class="text-center">
+          <a class="btn" href="#">HIRE ME</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- MODAL 3 -->
+  <div class="modal" id="modal_hireme">
+    <div class="modal__dialog modal__dialog--sm">
+
+      <button class="modal__close" type="button" data-close><i class="fas fa-times-circle" alt="close"></i></button>
+
+      <div class="contact">
+        <div class="contact__left">
+          <h3 class="modal__title mb-0">let's talk!</h3>
+          <div class="modal__subtit">call me or send me a request</div>
+
+          <ul class="contact__info">
+            <li><i class="fas fa-phone-square-alt"></i>    (200) 100 3000</li>
+           
+            <li><i class="fas fa-envelope"></i>    gozelcholukova@gmail.com</li>
+          </ul>
+
+          <form action="/" method="POST">
+            <div class="form__group">
+              <label class="form__label" for="input-email">Adress e-mail</label>
+              <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Enter your e-mail">
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="input-email">Request</label>
+              <textarea class="form__textarea" name="input-text" id="input-text"placeholder="Type your request..."></textarea>
+            </div>
+
+            <div class="text-right">
+              <button class="btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div> 
+
+        <!-- <div class="contact__right">
+          <img src="/images/christian-holzinger-kEXMAGTivXA-unsplash.jpg" alt="">
+        </div>         -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+  <script src="js.js"></script>
+  <script src="https://kit.fontawesome.com/f7d9e3b3c9.js" crossorigin="anonymous"></script>
+  
+</body>
+</html>
