@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <title>Portfolio</title>
 </head>
 <body>
@@ -111,7 +112,7 @@
         </div>
 
         <div class="portfolio__col" data-cat="website">           
-          <div class="work">
+          <div class="work" data-modal="#modal_project2">
             <img class="work__image" src="images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="">
             <div class="work__content">
               <div class="work__categ">Category: website</div>
@@ -369,7 +370,15 @@
 
       <div class="modal-work">
         <div class="modal-work__preview">
-          <img src="images/georgie-cobbs-muOHbrFGEQY-unsplash.jpg" alt="">
+          <div data-slider="slick">
+            <div>
+              <img src="images/georgie-cobbs-muOHbrFGEQY-unsplash.jpg" alt="">
+            </div>
+
+            <div>
+              <img src="images/kevin-ku-aiyBwbrWWlo-unsplash.jpg" alt="">
+            </div>
+          </div>
         </div>
 
         <div class="modal-work__content">
@@ -389,8 +398,52 @@
           </div>
 
           <div class="modal-work__footer">
-            <button class="m-w__btn m-w__btn--prev" type="button"><i class="fas fa-angle-left"></i>      Previous</button>
-            <button class="m-w__btn m-w__btn--next" type="button">Next      <i class="fas fa-angle-right"></i></button>
+            <button class="m-w__btn m-w__btn--prev slickPrev" type="button"><i class="fas fa-angle-left"></i>      Previous</button>
+            <button class="m-w__btn m-w__btn--next slickNext" type="button">Next      <i class="fas fa-angle-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modal_project2">
+    <div class="modal__dialog">
+
+      <button class="modal__close" type="button" data-close><i class="fas fa-times-circle" alt="close"></i></button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <div data-slider="slick">
+            <div>
+              <img src="images/georgie-cobbs-muOHbrFGEQY-unsplash.jpg" alt="">
+            </div>
+
+            <div>
+              <img src="images/kevin-ku-aiyBwbrWWlo-unsplash.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">Project Title 2</h3>
+            <div class="modal-work__info">category <span class="divider">|</span> 2019</div>
+          </div>
+
+          <div class="modal-work__client">
+            <div class="client-title">Client:</div>
+            <div class="client-company"> W.E.Lyons</div>
+          </div>
+
+          <div class="modal-work__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus voluptatem ut eaque! Iste eos eius voluptatem animi quae quam non temporibus suscipit, beatae doloremque laudantium iure enim veritatis a.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laborum libero dolor blanditiis laboriosam temporibus. Harum esse autem culpa rerum? Quia alias quisquam doloribus sed quod error necessitatibus incidunt fugiat.</p>
+          </div>
+
+          <div class="modal-work__footer">
+            <button class="m-w__btn m-w__btn--prev slickPrev" type="button"><i class="fas fa-angle-left"></i>      Previous</button>
+            <button class="m-w__btn m-w__btn--next slickNext" type="button">Next      <i class="fas fa-angle-right"></i></button>
           </div>
         </div>
 
@@ -619,6 +672,6 @@
 
   <script src="js.js"></script>
   <script src="https://kit.fontawesome.com/f7d9e3b3c9.js" crossorigin="anonymous"></script>
-  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
