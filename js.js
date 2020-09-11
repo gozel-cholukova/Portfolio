@@ -26,6 +26,23 @@ $(function() {
     };
   });
 
+      /* Smooth scroll */
+  $("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
+
+    var $this = $(this),
+        blockId = $this.data('scroll'),
+        blockOffset = $(blockId).offset().top;
+
+    $("#nav a").removeClass("active");
+    $this.addClass("active");
+
+    $("html, body").animate({
+      scrollTop:  blockOffset
+    }, 500);
+  });
+
+
   // MODALS
   const modalCall = $("[data-modal]");
   const modalClose = $("[data-close]");
@@ -114,6 +131,12 @@ $(function() {
 
     currentSlider.slick("slickNext");
   });
+
+
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  })
 
 });
 
